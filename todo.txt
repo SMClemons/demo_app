@@ -12,25 +12,3 @@ Clone your classmate’s project
 
 Fork someone else’s project!
 
-When you want to make a fix to an existing open source project, and are not a named collaborator, what you can do is fork the project, fix your copy, and submit a “pull request” to the project maintainer, asking them to pull the fix patch from your forked copy of their project.
-
-    
-
-Merge someone else’s fork back into your project
-
-If, by some chance someone has taken the time to send your a “pull request” to let you know they’ve been doing your work for you (isn’t open source great?!?), then you’ll want to act on that request.
-
-    
-
-At this point, we have one git repository that knows how to run code from two different branches. Notice how both repository branches coexist in the same directory! This is an important difference from other source code repository tools like Subversion!
-Really do the merge
-
-Doing the merge locally from your development machine:
-
-    
-Now, you can verify the fixes are in your project any way you want. Perhaps using github’s GUI project navigation?
-github’s merge features
-
-github has GUI features for doing merges. If you reach this point early, find them and try them out.
-
-You might want to delete this repository. You can always start with git clone <Your Clone URL> when you need to work again…
