@@ -1,113 +1,33 @@
 Work on your own project
 
-    Make some changes to your README file.
-    Create a todo file with a todo list inside.
-    run git add README todo
-    run git commit -m "first changes"
-    Make more changes to both files.
-    run git add README todo
-    run git commit -m "second changes"
-    Make third set of changes to both files.
-    run git add README todo
-    run git commit -m "third set of changes. Now ready to push to github!"
-    run git push origin
+    
 
 Collaborate with a classmate!
 
-    find a classmate who has gotten this far
-    Add your classmate as a collaborator on your open source project (and they’ll add you)
-        From your bookmarked project page, click on the “Admin” button.
-        Click on “Collaborators”
-        Click on the red “Add another collaborator” link
-        Enter your classmate’s github account name
-        Click the “Add” button
-        Your classmate should now be listed under “Repository Collaborators”
+    
 
 Clone your classmate’s project
 
-    Just like you added your classmate, they should have added you
-    You should now be able to:
-        go look at their project’s repository on github
-        note (when logged in as yourself)
-        run git clone <Your Clone URL> to create a new clone of their project
-        You should now be able to play with these commands on their project:
-            git diff origin #show what’s different between your local repository and the origin on github
-            git pull # pull all code changes down from origin to your local repository.
-            make code changes
-            git add <files that changed>
-            git commit -m "Your message here"
-            git push origin # push your commits since the last push to the origin repository on github
-        Play around with see each other’s changes…
+    
 
 Fork someone else’s project!
 
 When you want to make a fix to an existing open source project, and are not a named collaborator, what you can do is fork the project, fix your copy, and submit a “pull request” to the project maintainer, asking them to pull the fix patch from your forked copy of their project.
 
-    Find a different classmate who has gotten this far.
-        It’s important that you NOT be collaborators on each other’s projects!
-    Exchange account and project names
-    Find their project on github (you can use the search feature)
-    Click the “fork” button for their project.
-        You now have your own private copy of their project in your own account.
-    copy the “Your Clone URL” for your copy of the project
-    Run git clone <your_clone_url>
-    edit the project to fix their buggy code!
-    run git add, git commit, and git push. You know how!
-    Click the “pull request” button to let your classmate know their project will fail without your amazing bug fix!
-        Note the github guide at http://github.com/guides/pull-requests
+    
 
 Merge someone else’s fork back into your project
 
 If, by some chance someone has taken the time to send your a “pull request” to let you know they’ve been doing your work for you (isn’t open source great?!?), then you’ll want to act on that request.
 
-    read the email that was sent to you for the pull request.
-    click on the link in the email to view the forked copy of your project.
-    on your local box:
-        Create a fresh copy of your project: git clone <Your Clone URL>
-        Look at a list of remote locations this brand new repository knows about: git remote
-            Should only show origin
-        Optionally verify you are in sync with your repository:
-            git status # should show nothing out of sync locally
-            git diff origin # should show no differences.
-        Add your classmate’s repository as a remote in yours:
-            git remote add <classmates_account> git://github.com/<classmates_account/<project_name>.git
-                All this did was give your repository knowledge of their repository location with a nickname.
-                Your PS1 prompt should still show you on master.
-        Now we’re going to do something really funky!
-        Create a new branch (the -b flag), and checkout a copy from your classmate’s remote repository:
-            git checkout -b <classmates_account>/master
-                Your PS1 prompt should now show you on <classmates_account>/master
-        Pull a copy of your classmate’s fixes into this new branch:
-            git pull <classmates_account> master
-        Look at the files your classmate changed
-            You should see their changes in those files!
-        Run git status
-            Note how the result shows that you are on this other branch
-                Just like your prompt does, and git branch does
-        Run git checkout master to return to your own local master
-            Your classmate changes should not be present now.
-        Run git checkout <classmates_account>/master # note there is NO -b option any more.
-            Classmate changes should be present again.
-            Note how your PS1 prompt kept changing to show which branch you were on at any given point in time.
+    
 
 At this point, we have one git repository that knows how to run code from two different branches. Notice how both repository branches coexist in the same directory! This is an important difference from other source code repository tools like Subversion!
 Really do the merge
 
 Doing the merge locally from your development machine:
 
-    Change back to your own master branch:
-        git checkout master
-    Merge changes from your branch that holds the fixes to the current one:
-        git merge --no-commit <classmates_account>/master
-            If you exclude --no-commit, then this will also do a local commit, so you would want to add the -m "Your message here" option.
-    Verify that their changes are in place, and need to be added.
-        look at their changes in the files
-        Run git status
-    Add, and commit their changes in a single command:
-        git commit -a -m "Your message here"
-    Push your local, fixed version of your project to your repository on github:
-        git push
-
+    
 Now, you can verify the fixes are in your project any way you want. Perhaps using github’s GUI project navigation?
 github’s merge features
 
